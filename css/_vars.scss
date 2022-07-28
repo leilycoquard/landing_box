@@ -1,0 +1,162 @@
+$black: #2E2D2C;
+$grey: #707070;
+$lightGrey:#EAEAE9;
+$lightGrey2: #d8d8d8;
+$yellow: #EFD857;
+$blackYellow:#EFDD4A;
+$lightYellow: #F7ECAB;
+$lightYellow2: #fdf9ca;
+$aqua: #1EA7AC;
+$lightBlue: #96DEE1;
+$green: #6CBE99;
+$lightGreen: #9ADFBF;
+$blue: #3C4488;
+$red:#E74011;
+$altRed: #d13a0f;
+$lightRed: #ffa185;
+$pink: #FFA085;
+$purple: #413B8A;
+$lightPurple: #A4A3D6;
+$white: white;
+
+
+$poppins: 'Poppins',sans-serif;
+
+
+$bigText: 40px;
+$text: 15px;
+$tinyText: 13px;
+$veryTinyText: 12px;
+$subtitle: 18px;
+$title: 20px;
+$bigTitle: 30px;
+$btnText: 16px;
+$btnSearchText: 20px;
+
+
+/* BACKGROUND COLOR */
+
+.bgc-black{
+  background-color: $black;
+}
+.bgc-transparent {
+  background-color: transparent;
+}
+
+.bgc-light-blue {
+  background-color: $lightBlue;
+}
+
+.bgc-blue {
+  background-color: $aqua;
+}
+
+.bgc-grey {
+  background-color: $grey;
+}
+
+.bgc-light-grey {
+  background-color: $lightGrey;
+}
+
+
+.bgc-yellow {
+  background-color: $yellow;
+}
+
+
+.bgc-light-yellow {
+  background-color: rgba($yellow, 0.7);
+}
+
+
+.bgc-pink {
+  background-color: $pink;
+}
+
+.bgc-purple {
+  background-color: $purple;
+}
+
+.bgc-red {
+  background-color: $red;
+}
+
+.bgc-light-red {
+  background-color: $lightRed;
+}
+
+.bgc-green {
+  background-color: $green;
+}
+
+.bgc-light-green {
+  background-color: $lightGreen;
+}
+
+.bg-none {
+  background: none;
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v129/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* BORDER */
+
+.border-radius-5 {
+  border-radius: 5px!important;
+}
+
+.border-radius-10 {
+  border-radius: 10px!important;
+}
+
+.border-radius-15 {
+  border-radius: 15px!important;
+}
+
+.border-radius-20 {
+  border-radius: 20px!important;
+}
+
+.border-radius-25 {
+  border-radius: 25px!important;
+}
+
+.border-radius-30 {
+  border-radius: 30px!important;
+}
+
+.border-radius-40 {
+  border-radius: 40px!important;
+}
+
+
+.white{
+  color: white!important;
+}
+
+.black{
+  color: black!important;
+}

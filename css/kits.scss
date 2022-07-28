@@ -1,0 +1,30 @@
+/** TEXT COLORS **/
+.r-bold{
+  font-weight: bold;
+}
+.r-aqua{
+  color: $aqua;
+}
+
+
+
+/** BUTTONS **/
+.r-kit-btn{
+  padding: 5px 15px;
+  background-color: $yellow;
+  color: $black;
+  border: 1px solid $yellow;
+  border-radius: 8px;
+  font-size:$btnText;
+
+  @media screen and(max-width: 992px){
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
