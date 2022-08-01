@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Box de fin d'année</title>
+
+        <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <section class="section-box-1"> <!--Première section hero, introduction à la page-->
+
+        <div class="uk-container">
+
+            <div class="uk-flex-middle uk-margin-large-top uk-grid"> <!--Se range en colonne sur portable, sinon row-->
+                <div class="uk-width-3-5@m uk-flex-first">
+                    <h1>Craquez pour nox box de fin d'année</h1>
+                    <h3>Nos coffrets disponibles pour les CE / CSE s’engagent dans la protection de l’environnement en passant du fait maison au zéro déchet,
+                        avec des produits frais et/ou de saison.</h3>
+                    <h3><strong>Cliquez sur la box qui vous intéresse</strong>, contactez le prestataire et c’est lancé !</h3>
+                    <div class="r-btn-box r-flex r-flex-center">
+                        <button class="r-kit-btn" name="goToBox">Découvrez nos box</button>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m uk-visible@m uk-margin-auto-top"> <!--Illustration de départ-->
+                    <img src="img/petanque.svg" width="1800" height="1200" alt="Image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-box-2" id="cards"> <!--Deuxième section, contenu principal-->
+        <div class="uk-container uk-background-muted uk-margin-large-top">
+
+            <div class="breadcrumb">
+                <ul class="uk-breadcrumb">
+                    <li><a href="">Accueil</a></li>
+                    <li><span>Toutes nos box</span></li>
+                </ul>
+                
+                
+            </div>
+            
+            <div class="uk-position-relative" uk-sticky="start: 0, end: true">
+                <div>
+                    <ul class="uk-tab subnav-underline mb-30" uk-tab>
+                        <li class="padding-10-15 fw-600" uk-filter-control>
+                            <a href="#">Toutes nos box (0)</a>
+                        </li>
+                        <li class="uk-text-center mb-15" uk-filter-control="[data-state='SAVE']">
+                            <a href="#">Coffret d'ensemble (0)</a>
+                        </li>
+                        <li class="uk-text-center mb-15" uk-filter-control="[data-state='BEING']">
+                            <a href="#">En cours (0)</a>
+                        </li>
+                        <li class="uk-text-center mb-15" uk-filter-control="[data-state='PLANNED']">
+                            <a href="#">Réservé (0)</a>
+                        </li>
+                        <li class="uk-text-center mb-15" uk-filter-control="[data-state='FINISHED']">
+                            <a href="#">Terminé (0)</a>
+                        </li>
+                        <li class="uk-text-center mb-15" uk-filter-control="[data-state='ARCHIVED']">
+                            <a href="#">Archivé (0)</a>
+                        </li>
+                    </ul>
+                </div>
+
+             
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    
+</body>
+</html>
