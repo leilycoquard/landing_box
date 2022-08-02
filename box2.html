@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Box de fin d'année</title>
+
+        <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <section class="section-box-1"> <!--Première section hero, introduction à la page-->
+
+        <div class="uk-container">
+
+            <div class="uk-flex-middle uk-margin-large-top uk-margin-medium-bottom uk-grid"> <!--Se range en colonne sur portable, sinon row-->
+                <div class="uk-position-top-right">
+                    <img src="img/vecteur_plusbleu.svg" alt="vecteur bleu">
+                </div>
+
+                <div class="uk-width-3-5@m uk-flex-first">
+                    <h1>Craquez pour nox box de fin d'année</h1>
+                    <h3>Nos coffrets disponibles pour les CE / CSE s’engagent dans la protection de l’environnement en passant du fait maison au zéro déchet,
+                        avec des produits frais et/ou de saison.</h3>
+                    <h3><strong>Cliquez sur la box qui vous intéresse</strong>, contactez le prestataire et c’est lancé !</h3>
+                    <div class="r-btn-box r-flex r-flex-center">
+                        <button class="r-kit-btn" name="goToBox">Découvrez nos box</button>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m uk-visible@m uk-margin-auto-top"> <!--Illustration de départ-->
+                    <img src="img/petanque.svg" width="1800" height="1200" alt="Image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-box-2 menu" id="cards"> <!--Deuxième section, contenu principal-->
+        <h1 class="uk-container">Deuxième version</h1>
+        <div class="uk-container uk-margin-medium-top menu-container">
+
+            <div class="uk-margin-small-bottom">
+                <p>
+                    <a href="/">accueil</a> / Box de fin d'année CE et CSE
+                </p>
+            </div>
+            
+            <div class="uk-flex uk-flex-wrap ">
+                <div class="uk-width-1-4@m uk-position-relative menu-tags">
+                    <ul class="uk-tab-right subnav-underline mb-30" uk-tab>
+                        <li class="active-btn padding-10-15 fw-600 tags" id="allBoxes">
+                            <a href="#">Toutes nos box (0)</a>
+                        </li>
+                        <li class="uk-text-left mb-15 tags" id="global">
+                            <a href="#">Coffret d'ensemble (0)</a>
+                        </li>
+                        <li class="uk-text-left mb-15 tags" id="drinks">
+                            <a href="#">Boissons (0)</a>
+                        </li>
+                        <li class="uk-text-left mb-15 tags" id="aTartiner">
+                            <a href="#">À tartiner (0)</a>
+                        </li>
+                        <li class="uk-text-left mb-15 tags" id="honey">
+                            <a href="#">Miel (0)</a>
+                        </li>
+                        <li class="uk-text-left mb-15 tags" id="soap">
+                            <a href="#">Savons (0)</a>
+                        </li>
+                        <li class="uk-text-left mb-15 tags" id="others">
+                            <a href="#">Autres (0)</a>  
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="uk-width-3-4@m box-items uk-grid-row-collapse" uk-grid>
+                    <!-- single card-->
+                    <div class = "uk-width-1-3@m box-item all global uk-background-muted">
+                        <div class = "box-img">
+                            <img src = "https://placekitten.com/640/360" alt = "placeholder image">
+                        </div>
+    
+                        <div class = "box-content">
+                            <h2 class = "box-name">Je suis une box</h2>
+                            <div class = "line"></div>
+                            <h3 class = "box-price">À partir de 12,50€/pers</h3>
+                            <ul class = "items">
+                                <li><i class = "item">Item 1</i></li>
+                                <li><i class = "item">Item 2</i></li>
+                                <li><i class = "item">Item 3</i></li>
+                                <li><i class = "item">Item 4</i></li>
+                            </ul>
+                            <p class = "category">Catégorie : <span>Coffret d'ensemble</span></p>
+                        </div>
+    
+                    </div>
+                    <!--end single card-->
+                    <div class = "uk-width-1-3@m box-item all drinks uk-background-muted">
+                        <div class = "box-img">
+                          <img src = "https://placekitten.com/640/400" alt = "placeholder image">
+                        </div>
+    
+                        <div class = "box-content">
+                            <h2 class = "box-name">Je suis une box moi aussi ! incroyable non ?</h2>
+                            <div class = "line"></div>
+                            <h3 class = "box-price">À partir de 12,50€/pers</h3>
+                            <ul class = "items">
+                                <li><i class = "item">Item 1</i></li>
+                                <li><i class = "item">Item 2</i></li>
+                                <li><i class = "item">Item 3 : je suis un giga item un peu long mais à peine, vraiment</i></li>
+                                <li><i class = "item">Item 4</i></li>
+                            </ul>
+                            <p class = "category">Catégorie : <span>Boissons</span></p>
+                        </div>
+                    </div>
+                    <div class = "uk-width-1-3@m box-item all honey uk-background-muted">
+                        <div class = "box-img">
+                            <img src = "https://placekitten.com/1000/500" alt = "placeholder image">
+                        </div>
+                        <div class = "box-content">
+                            <h2 class = "box-name">Je suis une box moi aussi ! incroyable non ?</h2>
+                            <div class = "line"></div>
+                            <h3 class = "box-price">À partir de 120,50€/pers</h3>
+                            <ul class = "items">
+                                <li><i class = "item">Item 1 : je suis du miel, du bon miel</i></li>
+                                <li><i class = "item">Item 2</i></li>
+                                <li><i class = "item">Item 3 : je suis un giga item un peu long mais à peine, vraiment</i></li>
+                                <li><i class = "item">Item 4</i></li>
+                            </ul>
+                            <p class = "category">Catégorie : <span>Miel</span></p>
+                        </div>
+                    </div>
+    
+                    <div class = "uk-width-1-3@m box-item all soap uk-background-muted">
+                        <div class = "box-img">
+                          <img src = "https://placekitten.com/1000/998" alt = "placeholder image">
+                        </div>
+    
+                        <div class = "box-content">
+                            <h2 class = "box-name">Je suis une box moi aussi ! incroyable non ?</h2>
+                            <div class = "line"></div>
+                            <h3 class = "box-price">À partir de 120,50€/pers</h3>
+                            <ul class = "items">
+                                <li><i class = "item">Item 1 : je suis du miel, du bon miel</i></li>
+                                <li><i class = "item">Item 2</i></li>
+                                <li><i class = "item">Item 3 : je suis un giga item un peu long mais à peine, vraiment</i></li>
+                                <li><i class = "item">Item 4</i></li>
+                            </ul>
+                            <p class = "category">Catégorie : <span>Savon</span></p>
+                        </div>
+                    </div>
+    
+                    <div class = "uk-width-1-3@m box-item all global uk-background-muted">
+                        <div class = "box-img">
+                          <img src = "https://placekitten.com/720/390" alt = "placeholder image">
+                        </div>
+                        <div class = "box-content">
+                            <h2 class = "box-name">Je suis une box</h2>
+                            <div class = "line"></div>
+                            <h3 class = "box-price">À partir de 12,50€/pers</h3>
+                            <ul class = "items">
+                                <li><i class = "item">Item 1</i></li>
+                                <li><i class = "item">Item 2</i></li>
+                                <li><i class = "item">Item 3</i></li>
+                                <li><i class = "item">Item 4</i></li>
+                            </ul>
+                            <p class = "category">Catégorie : <span>Coffret d'ensemble</span></p>
+                        </div>
+                    </div>
+    
+                </div>     
+            </div>
+
+        </div>
+    
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
