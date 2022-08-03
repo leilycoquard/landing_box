@@ -45,8 +45,7 @@
         </div>
     </section>
 
-    <section class="section-box-2 menu" id="cards"> <!--Deuxième section, contenu principal-->
-        <h1 class="uk-container">Première version</h1>
+    <section class="section-box-2 menu" id="cards"  > <!--Deuxième section, contenu principal-->
         <div class="uk-container uk-margin-medium-top menu-container">
 
             <div class="uk-margin-small-bottom">
@@ -55,9 +54,9 @@
                 </p>
             </div>
             
-            <div class="uk-position-relative menu-tags">
+            <div class="uk-position-relative menu-tags" uk-sticky>
                 <ul class="uk-tab subnav-underline mb-30" uk-tab>
-                    <li class="padding-10-15 fw-600 tags" id="allBoxes">
+                    <li class="padding-10-15 fw-600 tags" id="all">
                         <a href="#">Toutes nos box (0)</a>
                     </li>
                     <li class="uk-text-center mb-15 tags" id="global">
@@ -83,7 +82,7 @@
 
             <div class="box-items uk-grid-row-collapse" uk-grid>
                 <!-- single card-->
-                <div class = "uk-width-1-4@m box-item global uk-background-muted">
+                <div class = "uk-width-1-4@m box-item all global uk-background-muted">
                     <div class = "box-img">
                         <img src = "https://placekitten.com/640/360" alt = "placeholder image">
                     </div>
@@ -103,14 +102,13 @@
 
                 </div>
                 <!--end single card-->
-                <div class = "uk-width-1-4@m box-item drinks uk-background-muted">
+                <div class = "uk-width-1-4@m box-item all drinks uk-background-muted">
                     <div class = "box-img">
                       <img src = "https://placekitten.com/640/400" alt = "placeholder image">
                     </div>
 
                     <div class = "box-content">
                         <h2 class = "box-name">Je suis une box moi aussi ! incroyable non ?</h2>
-                        <div class = "line"></div>
                         <h3 class = "box-price">À partir de 12,50€/pers</h3>
                         <ul class = "items">
                             <li><i class = "item">Item 1</i></li>
@@ -121,13 +119,12 @@
                         <p class = "category">Catégorie : <span>Boissons</span></p>
                     </div>
                 </div>
-                <div class = "uk-width-1-4@m box-item honey uk-background-muted">
+                <div class = "uk-width-1-4@m box-item all honey uk-background-muted">
                     <div class = "box-img">
                         <img src = "https://placekitten.com/1000/500" alt = "placeholder image">
                     </div>
                     <div class = "box-content">
                         <h2 class = "box-name">Je suis une box moi aussi ! incroyable non ?</h2>
-                        <div class = "line"></div>
                         <h3 class = "box-price">À partir de 120,50€/pers</h3>
                         <ul class = "items">
                             <li><i class = "item">Item 1 : je suis du miel, du bon miel</i></li>
@@ -139,14 +136,13 @@
                     </div>
                 </div>
 
-                <div class = "uk-width-1-4@m box-item soap uk-background-muted">
+                <div class = "uk-width-1-4@m box-item all soap uk-background-muted">
                     <div class = "box-img">
                       <img src = "https://placekitten.com/1000/998" alt = "placeholder image">
                     </div>
 
                     <div class = "box-content">
                         <h2 class = "box-name">Je suis une box moi aussi ! incroyable non ?</h2>
-                        <div class = "line"></div>
                         <h3 class = "box-price">À partir de 120,50€/pers</h3>
                         <ul class = "items">
                             <li><i class = "item">Item 1 : je suis du miel, du bon miel</i></li>
@@ -158,13 +154,12 @@
                     </div>
                 </div>
 
-                <div class = "uk-width-1-4@m box-item global uk-background-muted">
+                <div class = "uk-width-1-4@m box-item all global uk-background-muted">
                     <div class = "box-img">
                       <img src = "https://placekitten.com/720/390" alt = "placeholder image">
                     </div>
                     <div class = "box-content">
                         <h2 class = "box-name">Je suis une box</h2>
-                        <div class = "line"></div>
                         <h3 class = "box-price">À partir de 12,50€/pers</h3>
                         <ul class = "items">
                             <li><i class = "item">Item 1</i></li>

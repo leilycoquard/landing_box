@@ -1,7 +1,7 @@
-const tags = document.querySelectorAll('.tags');
-const boxItem = document.querySelectorAll('.box-item');
+const tags = document.querySelectorAll('.tags'); //catégories dans le menu
+const boxItem = document.querySelectorAll('.box-item'); //cards pour les box
 
-let activeBtn = "all";
+let activeBtn = "all"; //de base : affiche toutes les cards
 
 showBoxMenu(activeBtn);
 
@@ -23,9 +23,9 @@ function showBoxMenu(newMenuBtn){
     activeBtn = newMenuBtn;
     boxItem.forEach((item) => {
         if(item.classList.contains(activeBtn)){
-            item.style.display = "grid";
+            item.style.display = "grid"; //affiche tous les items contenant la classe de activeBtn (même nom dans id et class)
         } else {
-            item.style.display = "none";
+            item.style.display = "none"; //sinon caché
         }
     });
 }
