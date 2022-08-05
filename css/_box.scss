@@ -1,6 +1,85 @@
-.hero {
+.landing-page {
+    position: relative;
+    background-color: #FFF;
+
+    .hero {
+        .hero-1 {
+            position: relative;
+            width: 45%;
+            float: left;
+            margin-top: 130px;
+
+            .vecteur {
+                position: absolute;
+                top:0;
+                right: 0;
+            }
+
+            .button {
+                margin-top: 50px;
+            }
+        }
+    
+        .hero-2 {
+            width: 45%;
+            float: right;
+            margin-top: 130px;
+    
+            .img {
+                max-width: 100%;
+            }
+        }
+    
+        @media screen and (max-width: 725px) {
+            .hero-1 {
+                width: 100%;
+            }
+            .hero-2 {
+                visibility: hidden;
+            }
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    }
 }
 
 .main {
-    
+    position: relative;
+    background-color: #efefef;
+
+    .menu-tags {
+        width: 30%;
+        float: left;
+    }
+
+    .box-items {
+        width: 70%;
+        float: right;
+
+        display: flex;
+        flex-flow: row wrap;
+
+        .box-item {
+            overflow: hidden;
+            height: 500px;
+        }
+
+        .top-item {
+            position: relative;
+
+            .badge img{
+                position: absolute;
+                top: 0;
+                width: 90px;
+            }
+
+            .box-image img {
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
 }

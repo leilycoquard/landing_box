@@ -11,54 +11,51 @@
 
 </head>
 <body>
-
-    <section class="hero container"> <!--Première section-->
-        <div class="hero-divide">
-
+    
+    <section class="landing-page">
+        <div class="container hero">
             <div class="hero-1">
-                <img src="img/vecteur_plusbleu.svg" alt="Vecteur" width="35"> 
-                <h1>Craquez pour nos box de fin d'année</h1>
+                <img src="img/vecteur_plusbleu.svg" alt="Vecteur" class="vecteur" width="35"> 
+                <h1 class="fw-700 font-40">Craquez pour nos box de fin d'année</h1>
                 <p>Nos coffrets disponibles pour les CE / CSE s’engagent dans la protection de l’environnement en passant du fait maison 
                     au zéro déchet, avec des produits frais et/ou de saison.</p>
                 <p>Cliquez sur la box qui vous intéresse, contactez le prestataire et c’est lancé !</p>
-                <div class="r-btn-box r-flex r-flex-center">
+                <div class="r-btn-box r-flex r-flex-center button">
                     <button class="r-kit-btn">Découvrir nos Box</button>
                 </div>
-            </div>
-
+            </div> <!--end info-->
             <div class="hero-2">
-                <img src="img/tchin.svg" alt="Deux personnes trinquant" width="250">
+                <img src="img/tchin.svg" alt="Deux personnes trinquant">
             </div>
-
-        </div> <!--end hero divide-->
-
+            <div class="clearfix"></div>
+        </div> <!-- end container -->
     </section>
 
     <section class="main">
 
-        <div class="main-content">
+        <div class="main-content container">
 
             <div class="menu-tags">
                 <ul>
                     <li class="active-btn fw-600 tags" id="all">
                         <a href="#">Toutes nos box (5)</a>
                     </li>
-                    <li class="uk-text-left mb-15 tags" id="global">
+                    <li class="mb-15 tags" id="global">
                         <a href="#">Coffret d'ensemble (2)</a>
                     </li>
-                    <li class="uk-text-left mb-15 tags" id="drinks">
+                    <li class="mb-15 tags" id="drinks">
                         <a href="#">Boissons (1)</a>
                     </li>
-                    <li class="uk-text-left mb-15 tags" id="aTartiner">
+                    <li class="mb-15 tags" id="aTartiner">
                         <a href="#">À tartiner (0)</a>
                     </li>
-                    <li class="uk-text-left mb-15 tags" id="honey">
+                    <li class="mb-15 tags" id="honey">
                         <a href="#">Miel (1)</a>
                     </li>
-                    <li class="uk-text-left mb-15 tags" id="soap">
+                    <li class="mb-15 tags" id="soap">
                         <a href="#">Savons (1)</a>
                     </li>
-                    <li class="uk-text-left mb-15 tags" id="others">
+                    <li class="mb-15 tags" id="others">
                         <a href="#">Autres (0)</a>  
                     </li>
                 </ul>
@@ -67,7 +64,7 @@
 
             <div class="box-items">
 
-                <div class="box-item all global">
+                <div class="box-item border-radius-15 all global">
 
                     <div class="top-item">
                         <div class="badge">
@@ -93,57 +90,59 @@
                 </div> <!-- end box-item-->
                 
             </div> <!--end box items-->
-
-            <div class="howitworks">
-                <h2>Comment ça marche ?</h2>
-
-                <div class="item-howitworks">
-                    <img src="img/-01.svg" alt="Main prenant une box">
-                    <p>Faites votre choix</p>
-                </div> <!--end item-howitworks-->
-
-                <div class="item-howitworks">
-                    <img src="img/-02.svg" alt="Main prenant une box">
-                    <p>Effectuez le devis<br>avec le prestataire</p>
-                </div> <!--end item-howitworks-->
-
-                <div class="item-howitworks">
-                    <img src="img/-03.svg" alt="Main prenant une box">
-                    <p>Payez en toute<br>sécurité sur Tcheen</p>
-                </div> <!--end item-howitworks-->
-
-                <div class="item-howitworks">
-                    <img src="img/-04.svg" alt="Main prenant une box">
-                    <p>Planifiez la livraison</p>
-                </div> <!--end item-howitworks-->
-
-            </div><!--end howitworks-->
-
-            <div class="avis">
-                <h2>D’autres ont testé avant vous</h2>
-
-                <div class="avis-1">
-                    <label>Mathilde, pour le centre de recherche INRIA :</label>
-                    <img src="img/stars.png" alt="Avis 5 étoiles">
-                    <p>J'ai contacté l'équipe de Tcheen pour offrir, aux participants d'un événement en ligne,une box apéro. Le résultat était 
-                        au delà de mes espérances ! Un choix deprestataires de qualité, et celui sélectionné a proposé une prestation au top, 
-                        avecdes produits qualitatifs et franchement délicieux ! Je ne peux que recommanderles services de l'équipe Tcheen pour 
-                        parfaire vos événementsqu'ils soient en physique ou en distanciel, l'équipe saura vous trouver une solution adaptée à 
-                        vos besoins et envies ! Encore un grand merci pour votre aide et la qualité du service :)</p>
-                </div> <!--end avis-1-->
-            </div> <!--end avis-->
-
-            <div class="help">
-                <h2>Besoin d'aide ?</h2>
-                <p>Vous avez des questions sur le fonctionnement de nos offres de Box de fin d’année ? Vous souhaitez nous faire parvenir un besoin particulier et/ou être accompagnés dans l'élaboration de votre commande ?
-                    ‍
-                    N'hésitez pas à nous contacter à bonjour@tcheen.com 📧
-                    ‍ou au 📞 07 56 99 30 34 !</p>
-            </div>
-
-            <img src="img/vecteur_vrose 1.svg" alt="Vecteur rose">
-
+        
         </div> <!-- end main content-->
+
+        <div class="howitworks">
+            <h2>Comment ça marche ?</h2>
+
+            <div class="item-howitworks">
+                <img src="img/-01.svg" alt="Main prenant une box">
+                <p>Faites votre choix</p>
+            </div> <!--end item-howitworks-->
+
+            <div class="item-howitworks">
+                <img src="img/-02.svg" alt="Main prenant une box">
+                <p>Effectuez le devis<br>avec le prestataire</p>
+            </div> <!--end item-howitworks-->
+
+            <div class="item-howitworks">
+                <img src="img/-03.svg" alt="Main prenant une box">
+                <p>Payez en toute<br>sécurité sur Tcheen</p>
+            </div> <!--end item-howitworks-->
+
+            <div class="item-howitworks">
+                <img src="img/-04.svg" alt="Main prenant une box">
+                <p>Planifiez la livraison</p>
+            </div> <!--end item-howitworks-->
+
+        </div><!--end howitworks-->
+
+        <div class="avis">
+            <h2>D’autres ont testé avant vous</h2>
+
+            <div class="avis-1">
+                <label>Mathilde, pour le centre de recherche INRIA :</label>
+                <img src="img/stars.png" alt="Avis 5 étoiles">
+                <p>J'ai contacté l'équipe de Tcheen pour offrir, aux participants d'un événement en ligne,une box apéro. Le résultat était 
+                    au delà de mes espérances ! Un choix deprestataires de qualité, et celui sélectionné a proposé une prestation au top, 
+                    avecdes produits qualitatifs et franchement délicieux ! Je ne peux que recommanderles services de l'équipe Tcheen pour 
+                    parfaire vos événementsqu'ils soient en physique ou en distanciel, l'équipe saura vous trouver une solution adaptée à 
+                    vos besoins et envies ! Encore un grand merci pour votre aide et la qualité du service :)</p>
+            </div> <!--end avis-1-->
+        </div> <!--end avis-->
+
+        <div class="help">
+            <h2>Besoin d'aide ?</h2>
+            <p>Vous avez des questions sur le fonctionnement de nos offres de Box de fin d’année ? Vous souhaitez nous faire parvenir un besoin particulier et/ou être accompagnés dans l'élaboration de votre commande ?
+                ‍
+                N'hésitez pas à nous contacter à bonjour@tcheen.com 📧
+                ‍ou au 📞 07 56 99 30 34 !</p>
+        </div>
+
+        <img src="img/vecteur_vrose 1.svg" alt="Vecteur rose">
+
+        
     </section>
 
     <script src="script.js"></script>
