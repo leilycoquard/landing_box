@@ -698,7 +698,7 @@ hr.hr-2 {
 }
 .landing-page .hero .hero-1 {
   position: relative;
-  width: 45%;
+  width: 50%;
   float: left;
   margin-top: 80px;
 }
@@ -706,6 +706,7 @@ hr.hr-2 {
   position: absolute;
   top: 0;
   right: 0;
+  transform: translate(0%, -90%);
 }
 .landing-page .hero .hero-1 .button {
   margin-top: 50px;
@@ -755,15 +756,21 @@ hr.hr-2 {
     opacity: 1;
   }
 }
+.main .box-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main .box-items > * {
+  margin: 10px;
+}
 .main .box-item {
   cursor: pointer;
   overflow: hidden;
   background-color: #FFF;
   height: 470px;
-  width: 400px;
+  width: 375px;
   -webkit-animation: fadeIn 0.4s;
           animation: fadeIn 0.4s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 .main .box-item .top-item {
   position: relative;
@@ -789,21 +796,24 @@ hr.hr-2 {
 }
 .main .box-item .box-content .box-price {
   background-color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-20%, -80%);
+  transform: translate(-20%, -70%);
 }
 .main .box-item .box-content * {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 350px;
+  max-width: 335px;
+}
+.main .box-item .box-content .box-text > * {
+  margin-bottom: 10px;
 }
 .main .box-item:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -814,19 +824,25 @@ hr.hr-2 {
 
 .howitworks {
   padding-top: 50px;
-  align-items: center;
+  text-align: center;
 }
 .howitworks .items-howitworks {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  overflow-x: scroll;
-}
-.howitworks .item-howitworks p {
-  text-align: center;
 }
 .howitworks .item-howitworks img {
   width: 200px;
+}
+
+.avis {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.help {
+  padding-top: 50px;
+  text-align: center;
 }
 
 .clearfix {
