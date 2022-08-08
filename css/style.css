@@ -785,6 +785,9 @@ hr.hr-2 {
     width: 100%;
     overflow: scroll;
   }
+  .main .menu-tags .menu-tags::-webkit-scrollbar {
+    display: none !important;
+  }
   .main .menu-tags ul {
     white-space: nowrap;
     overflow: scroll;
@@ -797,6 +800,8 @@ hr.hr-2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  float: right;
+  width: 80%;
 }
 @media screen and (max-width: 725px) {
   .main .menu-tags {
@@ -805,7 +810,6 @@ hr.hr-2 {
   }
   .main .box-items {
     width: 100%;
-    display: block;
   }
 }
 .main .box-item {
@@ -823,7 +827,7 @@ hr.hr-2 {
 .main .box-item .top-item .badge img {
   position: absolute;
   top: 0;
-  width: 90px;
+  width: 60px;
   -o-object-fit: cover;
      object-fit: cover;
   transform: translate(10%, 10%);
@@ -852,10 +856,12 @@ hr.hr-2 {
   transform: translate(-20%, -70%);
 }
 .main .box-item .box-content * {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 210px;
+}
+.main .box-item .box-content ul li {
+  list-style-type: circle;
 }
 .main .box-item .box-content .box-text > * {
   margin-bottom: 10px;
@@ -874,7 +880,7 @@ hr.hr-2 {
 }
 
 .howitworks {
-  padding-top: 50px;
+  padding-top: 0px;
   text-align: center;
 }
 .howitworks h2 {
@@ -884,18 +890,38 @@ hr.hr-2 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  overflow: scroll;
 }
 .howitworks .item-howitworks img {
   width: 200px;
+}
+@media screen and (max-width: 725px) {
+  .howitworks .items-howitworks {
+    justify-content: flex-start !important;
+  }
 }
 
 .avis {
   padding-top: 50px;
   text-align: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+@media screen and (max-width: 725px) {
+  .avis {
+    padding: 10 10px;
+  }
 }
 .avis h2 {
   padding-bottom: 30px;
 }
+.avis .avis-1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: solid 2px #707070;
+}
+
 .help {
   padding-top: 50px;
   text-align: center;

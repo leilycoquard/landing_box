@@ -98,6 +98,10 @@
                 overflow: scroll;
             }
 
+            .menu-tags::-webkit-scrollbar {
+                display: none!important;
+              }
+
             ul {
                 white-space: nowrap;
                 overflow: scroll;
@@ -114,6 +118,9 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+
+        float:right;
+        width:80%;
     }
 
     @media screen and (max-width: 725px){
@@ -124,7 +131,6 @@
         }
         .box-items {
             width: 100%;
-            display: block;
         }
     }
 
@@ -142,7 +148,7 @@
             .badge img {
                 position: absolute;
                 top:0;
-                width: 90px;
+                width: 60px;
                 object-fit: cover;
 
                 transform: translate(10%, 10%);
@@ -174,10 +180,13 @@
             }
 
             * {
-                white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 max-width: 210px;
+            }
+
+            ul li {
+                list-style-type: circle;
             }
 
             .box-text {
@@ -206,7 +215,7 @@
 }
 
 .howitworks {
-    padding-top: 50px;
+    padding-top: 0px;
     text-align: center;
 
     h2 {
@@ -217,10 +226,17 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
+        overflow: scroll;
     }
 
     .item-howitworks img{
         width: 200px;
+    }
+
+    @media screen and (max-width:725px) {
+        .items-howitworks {
+            justify-content: flex-start!important;
+        }
     }
     
 }
@@ -229,12 +245,22 @@
     padding-top: 50px;
     text-align: center;
 
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 60px;
+    
+    @media screen and (max-width:725px) {
+        padding: 10 10px;
+    }
+
     h2 {
         padding-bottom: 30px;
     }
 
     .avis-1 {
-        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border:solid 2px $grey;
     }
 }
 
