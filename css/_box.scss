@@ -74,7 +74,9 @@
 
         position: -webkit-sticky;
 		position: sticky;
-		top: 130px;
+		top: 0;
+        z-index: 2;
+        background-color: #efefef;
 
         .breadcrumb {
             margin-bottom: 20px;
@@ -88,6 +90,23 @@
         li:not(.active-btn):hover {
             text-decoration: underline;
         }
+        
+        @media screen and (max-width: 725px) {
+            .menu-tags {
+                padding-top: 20px;
+                width:100%;
+                overflow: scroll;
+            }
+
+            ul {
+                white-space: nowrap;
+                overflow: scroll;
+            }
+
+            ul li {
+                display: inline;
+            }
+        }
        
     }
 
@@ -100,9 +119,12 @@
     @media screen and (max-width: 725px){
         .menu-tags {
             width: 100%;
+            display: block;
+
         }
         .box-items {
             width: 100%;
+            display: block;
         }
     }
 
@@ -110,8 +132,7 @@
         cursor:pointer;
         overflow: hidden;
         background-color: #FFF;
-        height: 470px;
-        width: 300px;
+        width: 250px;
         animation: fadeIn 0.4s;
         margin:10px;
 
@@ -156,12 +177,20 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-width: 260px;
+                max-width: 210px;
             }
 
             .box-text {
                 > * {
                     margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 16px;
+                }
+                
+                p, li {
+                    font-size: 14px;
                 }
             }
         }
@@ -180,6 +209,10 @@
     padding-top: 50px;
     text-align: center;
 
+    h2 {
+        padding-bottom: 30px;
+    }
+
     .items-howitworks {
         display: flex;
         flex-flow: row nowrap;
@@ -195,11 +228,23 @@
 .avis {
     padding-top: 50px;
     text-align: center;
+
+    h2 {
+        padding-bottom: 30px;
+    }
+
+    .avis-1 {
+        
+    }
 }
 
 .help {
     padding-top: 50px;
     text-align: center;
+
+    h2 {
+        padding-bottom: 30px;
+    }
 }
 
 .clearfix {

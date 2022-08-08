@@ -765,7 +765,9 @@ hr.hr-2 {
   width: 20%;
   position: -webkit-sticky;
   position: sticky;
-  top: 130px;
+  top: 0;
+  z-index: 2;
+  background-color: #efefef;
 }
 .main .menu-tags .breadcrumb {
   margin-bottom: 20px;
@@ -777,6 +779,20 @@ hr.hr-2 {
 .main .menu-tags li:not(.active-btn):hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 725px) {
+  .main .menu-tags .menu-tags {
+    padding-top: 20px;
+    width: 100%;
+    overflow: scroll;
+  }
+  .main .menu-tags ul {
+    white-space: nowrap;
+    overflow: scroll;
+  }
+  .main .menu-tags ul li {
+    display: inline;
+  }
+}
 .main .box-items {
   display: flex;
   flex-flow: row wrap;
@@ -785,17 +801,18 @@ hr.hr-2 {
 @media screen and (max-width: 725px) {
   .main .menu-tags {
     width: 100%;
+    display: block;
   }
   .main .box-items {
     width: 100%;
+    display: block;
   }
 }
 .main .box-item {
   cursor: pointer;
   overflow: hidden;
   background-color: #FFF;
-  height: 470px;
-  width: 300px;
+  width: 250px;
   -webkit-animation: fadeIn 0.4s;
           animation: fadeIn 0.4s;
   margin: 10px;
@@ -838,10 +855,16 @@ hr.hr-2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 260px;
+  max-width: 210px;
 }
 .main .box-item .box-content .box-text > * {
   margin-bottom: 10px;
+}
+.main .box-item .box-content .box-text h3 {
+  font-size: 16px;
+}
+.main .box-item .box-content .box-text p, .main .box-item .box-content .box-text li {
+  font-size: 14px;
 }
 .main .box-item:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -853,6 +876,9 @@ hr.hr-2 {
 .howitworks {
   padding-top: 50px;
   text-align: center;
+}
+.howitworks h2 {
+  padding-bottom: 30px;
 }
 .howitworks .items-howitworks {
   display: flex;
@@ -867,10 +893,15 @@ hr.hr-2 {
   padding-top: 50px;
   text-align: center;
 }
-
+.avis h2 {
+  padding-bottom: 30px;
+}
 .help {
   padding-top: 50px;
   text-align: center;
+}
+.help h2 {
+  padding-bottom: 30px;
 }
 
 .clearfix {
