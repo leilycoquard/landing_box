@@ -883,9 +883,6 @@ hr.hr-2 {
   margin-top: 30px;
   padding-bottom: 30px;
 }
-.howitworks .buttons {
-  display: none;
-}
 .howitworks .items-howitworks {
   display: flex;
   flex-flow: row nowrap;
@@ -912,8 +909,11 @@ hr.hr-2 {
   margin: 0 auto;
   padding: 0 60px;
 }
+.avis .hide-text {
+  display: block;
+}
 @media screen and (max-width: 725px) {
-  .avis .hidden {
+  .avis .hide-text {
     display: none;
   }
   .avis img {
