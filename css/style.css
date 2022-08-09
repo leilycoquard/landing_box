@@ -735,9 +735,13 @@ hr.hr-2 {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #efefef;
+  position: relative;
 }
 .main a {
   color: inherit;
+}
+.main .vecteur {
+  position: absolute;
 }
 .main .main-content {
   max-width: 1400px;
@@ -788,20 +792,17 @@ hr.hr-2 {
     width: 100%;
     display: block;
     padding: 10px;
+    height: 60px;
+    overflow-y: hidden;
+    width: 100%;
   }
   .main .box-items {
     width: 100%;
   }
-  .main ::-webkit-scrollbar {
-    height: 0px;
-    background: transparent; /* make scrollbar transparent */
-  }
-  .main .menu-tags::-webkit-scrollbar {
-    display: none !important;
-  }
   .main ul {
     white-space: nowrap;
     overflow: scroll;
+    padding-bottom: 30px;
   }
   .main ul li {
     display: inline;
@@ -878,6 +879,9 @@ hr.hr-2 {
   padding-top: 0px;
   padding-bottom: 50px;
   text-align: center;
+  height: 400px;
+  overflow-y: hidden;
+  width: 100%;
 }
 .howitworks h2 {
   margin-top: 30px;
@@ -887,7 +891,8 @@ hr.hr-2 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  overflow: scroll;
+  overflow-y: scroll;
+  padding-bottom: 30px;
 }
 .howitworks .item-howitworks img {
   width: 200px;
