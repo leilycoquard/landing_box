@@ -769,32 +769,12 @@ hr.hr-2 {
   z-index: 2;
   background-color: #efefef;
 }
-.main .menu-tags .breadcrumb {
-  margin-bottom: 20px;
-}
 .main .menu-tags .active-btn {
   font-weight: 600;
   font-size: 22px;
 }
 .main .menu-tags li:not(.active-btn):hover {
   text-decoration: underline;
-}
-@media screen and (max-width: 725px) {
-  .main .menu-tags .menu-tags {
-    padding-top: 20px;
-    width: 100%;
-    overflow: scroll;
-  }
-  .main .menu-tags .menu-tags::-webkit-scrollbar {
-    display: none !important;
-  }
-  .main .menu-tags ul {
-    white-space: nowrap;
-    overflow: scroll;
-  }
-  .main .menu-tags ul li {
-    display: inline;
-  }
 }
 .main .box-items {
   display: flex;
@@ -807,9 +787,24 @@ hr.hr-2 {
   .main .menu-tags {
     width: 100%;
     display: block;
+    padding: 10px;
   }
   .main .box-items {
     width: 100%;
+  }
+  .main ::-webkit-scrollbar {
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  .main .menu-tags::-webkit-scrollbar {
+    display: none !important;
+  }
+  .main ul {
+    white-space: nowrap;
+    overflow: scroll;
+  }
+  .main ul li {
+    display: inline;
   }
 }
 .main .box-item {
@@ -881,10 +876,15 @@ hr.hr-2 {
 
 .howitworks {
   padding-top: 0px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .howitworks h2 {
+  margin-top: 30px;
   padding-bottom: 30px;
+}
+.howitworks .buttons {
+  display: none;
 }
 .howitworks .items-howitworks {
   display: flex;
@@ -899,35 +899,49 @@ hr.hr-2 {
   .howitworks .items-howitworks {
     justify-content: flex-start !important;
   }
+  .howitworks .buttons {
+    display: inline;
+  }
 }
 
 .avis {
   padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 60px;
 }
 @media screen and (max-width: 725px) {
-  .avis {
-    padding: 10 10px;
+  .avis .hidden {
+    display: none;
+  }
+  .avis img {
+    width: 50%;
   }
 }
 .avis h2 {
   padding-bottom: 30px;
 }
 .avis .avis-1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   border: solid 2px #707070;
 }
 
 .help {
   padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
+  position: relative;
 }
 .help h2 {
   padding-bottom: 30px;
+}
+.help img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
 }
 
 .clearfix {

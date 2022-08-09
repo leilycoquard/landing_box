@@ -4,6 +4,7 @@
     background-color: #FFF;
     
     .hero {
+
         .hero-1 {
             position: relative;
             width: 50%;
@@ -78,10 +79,6 @@
         z-index: 2;
         background-color: #efefef;
 
-        .breadcrumb {
-            margin-bottom: 20px;
-        }
-
         .active-btn {
             font-weight: 600;
             font-size: 22px;
@@ -89,27 +86,6 @@
 
         li:not(.active-btn):hover {
             text-decoration: underline;
-        }
-        
-        @media screen and (max-width: 725px) {
-            .menu-tags {
-                padding-top: 20px;
-                width:100%;
-                overflow: scroll;
-            }
-
-            .menu-tags::-webkit-scrollbar {
-                display: none!important;
-              }
-
-            ul {
-                white-space: nowrap;
-                overflow: scroll;
-            }
-
-            ul li {
-                display: inline;
-            }
         }
        
     }
@@ -127,11 +103,31 @@
         .menu-tags {
             width: 100%;
             display: block;
+            padding: 10px;
 
         }
         .box-items {
             width: 100%;
         }
+
+        ::-webkit-scrollbar {
+            height: 0px;
+            background: transparent; /* make scrollbar transparent */
+        }
+
+        .menu-tags::-webkit-scrollbar {
+            display: none!important;
+          }
+
+        ul {
+            white-space: nowrap;
+            overflow: scroll;
+        }
+
+        ul li {
+            display: inline;
+        }
+
     }
 
     .box-item {
@@ -216,10 +212,16 @@
 
 .howitworks {
     padding-top: 0px;
+    padding-bottom: 50px;
     text-align: center;
 
     h2 {
+        margin-top: 30px;
         padding-bottom: 30px;
+    }
+
+    .buttons {
+        display: none;
     }
 
     .items-howitworks {
@@ -227,6 +229,7 @@
         flex-flow: row nowrap;
         justify-content: space-around;
         overflow: scroll;
+
     }
 
     .item-howitworks img{
@@ -237,12 +240,16 @@
         .items-howitworks {
             justify-content: flex-start!important;
         }
+        .buttons {
+            display: inline;
+        }
     }
     
 }
 
 .avis {
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
 
     max-width: 1080px;
@@ -250,7 +257,12 @@
     padding: 0 60px;
     
     @media screen and (max-width:725px) {
-        padding: 10 10px;
+        .hidden {
+            display: none;
+        }
+        img {
+            width: 50%;
+        }
     }
 
     h2 {
@@ -258,18 +270,26 @@
     }
 
     .avis-1 {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
         border:solid 2px $grey;
     }
 }
 
 .help {
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
+    position: relative;
 
     h2 {
         padding-bottom: 30px;
+    }
+
+    img {
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        transform: translate(-50%, +100%);
     }
 }
 
