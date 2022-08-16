@@ -801,7 +801,7 @@ hr.hr-2 {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #fff;
+  background-color: #EFD857;
 }
 @media screen and (max-width: 725px) {
   .main .menu-tags .active-btn {
@@ -902,6 +902,9 @@ hr.hr-2 {
 }
 .main .box-item .box-content .box-text p, .main .box-item .box-content .box-text li {
   font-size: 14px;
+}
+.main .box-item .box-content .box-text .title {
+  color: #3C4488;
 }
 .main .box-item:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
