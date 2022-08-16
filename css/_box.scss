@@ -82,6 +82,10 @@
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 60px;
+
+        .breadcrumb {
+            margin-bottom: 20px;
+        }
     }
 
     @keyframes fadeIn{
@@ -220,12 +224,14 @@
             }
 
             .box-text {
+                align-items: space-between;
+
                 > * {
                     margin-bottom: 10px;
                 }
 
                 h3 {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                 
                 p, li {
@@ -246,6 +252,19 @@
 
 .addscroll {
     text-align: center;
+    margin-bottom: 100px;
+
+    .scroll {
+        display: none;
+    }
+
+    @media screen and (max-width:725px) {
+        .scroll {
+            display: inline;
+            justify-content: center;
+        }
+    }
+
 }
 
 .howitworks {
@@ -282,10 +301,6 @@
         width: 200px;
     }
 
-    .scroll {
-        display: none;
-    }
-
     @media screen and (max-width:725px) {
         .howitworks {
             width: 100%;
@@ -297,10 +312,6 @@
 
         .items-howitworks {
             justify-content: flex-start!important;
-        }
-        .scroll {
-            display: inline;
-            justify-content: center;
         }
     }
     
