@@ -1,6 +1,7 @@
 .landing-page {
     a { color: inherit; } 
     position: relative;
+    padding-bottom: 60px;
     background-color: #FFF;
     
     .hero {
@@ -48,7 +49,25 @@
     }
 }
 
-.main {
+.info-mobile{
+    a { color: inherit; } 
+    position: relative;
+    background-color: $aqua;
+
+    .info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:726px){
+    .info-mobile {
+        display: none;
+    }
+}
+
+
+.main-coffret {
     a { color: inherit; } 
     padding-top: 50px;
     padding-bottom: 50px;
