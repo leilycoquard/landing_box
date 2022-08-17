@@ -1,5 +1,10 @@
 .landing-page {
-    a { color: inherit; } 
+    a { 
+        color: inherit; 
+        display: block;
+        width: 100%;
+        height: 100%;
+    } 
     position: relative;
     padding-bottom: 60px;
     background-color: #FFF;
@@ -54,7 +59,12 @@
 }
 
 .info-mobile{
-    a { color: inherit; } 
+    a {
+        color: inherit; 
+        display: block;
+        width: 100%;
+        height: 100%;
+    } 
     position: relative;
 
     .info {
@@ -137,7 +147,12 @@
     }
 
     .info-desktop {
-        a { color: inherit; } 
+        a { 
+            color: inherit; 
+            display: block;
+            width: 100%;
+            height: 100%;
+        } 
         position: relative;
         margin-top: 50px;
 
@@ -398,7 +413,12 @@
 }
 
 .bottom {
-    a { color: inherit; } 
+    a {
+        color: inherit; 
+        display: block;
+        width: 100%;
+        height: 100%;
+    } 
 
     .avis {
         padding-top: 50px;
