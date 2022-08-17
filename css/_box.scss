@@ -26,6 +26,10 @@
             .button {
                 margin-top: 50px;
             }
+
+            .btn-discover {
+                font-size: 18px;
+            }
         }
     
         .hero-2 {
@@ -52,11 +56,33 @@
 .info-mobile{
     a { color: inherit; } 
     position: relative;
-    background-color: $aqua;
 
     .info {
-        padding-top: 30px;
+        padding-top: 15px;
         padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        border: 2px solid $aqua;
+    }
+
+    .spacing > * {
+        margin-bottom: 15px;
+    }
+
+    .btn-second {
+        color: $white;
+        background-color: $aqua;
+        font-size: 14px;
+    }
+
+    .center-options {
+        display: flex;  
+        gap:10px;
+
+        > * {
+            width: 50%;
+        }
     }
 }
 
@@ -81,21 +107,6 @@
         right:0;
         transform: translate(-100%, -50%);
     }
-
-    .vector {
-        position: absolute;
-        bottom:0;
-    }
-
-    .vector-round-1 {
-        left:0;
-        transform: translate(+50%,+50%);
-    }
-    
-    .vector-round-2 {
-        right:0;
-        transform: translate(-50%,+50%);
-    }
     
     .main-content {
         max-width: 1400px;
@@ -115,8 +126,8 @@
             opacity: 1;
         }
     }
-    
-    .menu-tags {
+
+    .sticky-side {
         float:left;
         width:20%;
 
@@ -127,7 +138,54 @@
         position: sticky;
 		top: 0;
         z-index: 2;
+
         background-color: #efefef;
+    }
+
+    .info-desktop {
+        a { color: inherit; } 
+        position: relative;
+        margin-top: 50px;
+
+        .info {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            border: 2px solid $aqua;
+        }
+
+        .spacing > * {
+            margin-bottom: 10px;
+        }
+
+        .btn-second {
+            color: $white;
+            background-color: $aqua;
+            font-size: 16px;
+        }
+
+        .center-options {
+            display: flex;  
+            flex-flow: column wrap;
+            gap:15px;
+        }
+    }
+
+    @media screen and (max-width:725px) {
+        .info-desktop {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:850px) {
+        .info-desktop p{
+            display: none;
+        }
+    }
+    
+    .menu-tags {
 
         .active-btn {
             font-weight: 600;
@@ -163,7 +221,7 @@
     }
 
     @media screen and (max-width: 725px){
-        .menu-tags {
+        .sticky-side {
             width: 100%;
             display: block;
             padding: 10px;
@@ -171,7 +229,9 @@
             overflow-y: hidden;
 
             top: 0;
+            z-index: 2;
 
+            background-color: #efefef;
         }
         .box-items {
             width: 100%;
@@ -215,6 +275,7 @@
             .badge img {
                 width: 60px;
                 object-fit: cover;
+                border-radius: 5px;
             }
             .box-img img{
                 object-fit: cover;

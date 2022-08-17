@@ -715,6 +715,9 @@ hr.hr-2 {
 .landing-page .hero .hero-1 .button {
   margin-top: 50px;
 }
+.landing-page .hero .hero-1 .btn-discover {
+  font-size: 18px;
+}
 .landing-page .hero .hero-2 {
   float: right;
   width: 300px;
@@ -734,14 +737,31 @@ hr.hr-2 {
 
 .info-mobile {
   position: relative;
-  background-color: #1EA7AC;
 }
 .info-mobile a {
   color: inherit;
 }
 .info-mobile .info {
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #1EA7AC;
+}
+.info-mobile .spacing > * {
+  margin-bottom: 15px;
+}
+.info-mobile .btn-second {
+  color: white;
+  background-color: #1EA7AC;
+  font-size: 14px;
+}
+.info-mobile .center-options {
+  display: flex;
+  gap: 10px;
+}
+.info-mobile .center-options > * {
+  width: 50%;
 }
 
 @media screen and (min-width: 726px) {
@@ -763,18 +783,6 @@ hr.hr-2 {
   top: 0;
   right: 0;
   transform: translate(-100%, -50%);
-}
-.main-coffret .vector {
-  position: absolute;
-  bottom: 0;
-}
-.main-coffret .vector-round-1 {
-  left: 0;
-  transform: translate(50%, 50%);
-}
-.main-coffret .vector-round-2 {
-  right: 0;
-  transform: translate(-50%, 50%);
 }
 .main-coffret .main-content {
   max-width: 1400px;
@@ -800,7 +808,7 @@ hr.hr-2 {
     opacity: 1;
   }
 }
-.main-coffret .menu-tags {
+.main-coffret .sticky-side {
   float: left;
   width: 20%;
   position: -webkit-sticky;
@@ -811,6 +819,43 @@ hr.hr-2 {
   top: 0;
   z-index: 2;
   background-color: #efefef;
+}
+.main-coffret .info-desktop {
+  position: relative;
+  margin-top: 50px;
+}
+.main-coffret .info-desktop a {
+  color: inherit;
+}
+.main-coffret .info-desktop .info {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #1EA7AC;
+}
+.main-coffret .info-desktop .spacing > * {
+  margin-bottom: 10px;
+}
+.main-coffret .info-desktop .btn-second {
+  color: white;
+  background-color: #1EA7AC;
+  font-size: 16px;
+}
+.main-coffret .info-desktop .center-options {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+}
+@media screen and (max-width: 725px) {
+  .main-coffret .info-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main-coffret .info-desktop p {
+    display: none;
+  }
 }
 .main-coffret .menu-tags .active-btn {
   font-weight: 600;
@@ -839,13 +884,15 @@ hr.hr-2 {
   width: 80%;
 }
 @media screen and (max-width: 725px) {
-  .main-coffret .menu-tags {
+  .main-coffret .sticky-side {
     width: 100%;
     display: block;
     padding: 10px;
     height: 50px;
     overflow-y: hidden;
     top: 0;
+    z-index: 2;
+    background-color: #efefef;
   }
   .main-coffret .box-items {
     width: 100%;
@@ -885,6 +932,7 @@ hr.hr-2 {
   width: 60px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 .main-coffret .box-item .top-item .box-img img {
   -o-object-fit: cover;
