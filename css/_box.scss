@@ -58,12 +58,8 @@
     position: relative;
 
     .info {
-        padding-top: 15px;
+        padding-top: 50px;
         padding-bottom: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-        border: 2px solid $aqua;
     }
 
     .spacing > * {
@@ -71,8 +67,6 @@
     }
 
     .btn-second {
-        color: $white;
-        background-color: $aqua;
         font-size: 14px;
     }
 
@@ -150,10 +144,8 @@
         .info {
             padding-top: 15px;
             padding-bottom: 15px;
-            padding-left: 20px;
-            padding-right: 20px;
-
-            border: 2px solid $aqua;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .spacing > * {
@@ -161,8 +153,6 @@
         }
 
         .btn-second {
-            color: $white;
-            background-color: $aqua;
             font-size: 16px;
         }
 

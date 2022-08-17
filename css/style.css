@@ -742,18 +742,13 @@ hr.hr-2 {
   color: inherit;
 }
 .info-mobile .info {
-  padding-top: 15px;
+  padding-top: 50px;
   padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 2px solid #1EA7AC;
 }
 .info-mobile .spacing > * {
   margin-bottom: 15px;
 }
 .info-mobile .btn-second {
-  color: white;
-  background-color: #1EA7AC;
   font-size: 14px;
 }
 .info-mobile .center-options {
@@ -830,16 +825,13 @@ hr.hr-2 {
 .main-coffret .info-desktop .info {
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 2px solid #1EA7AC;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .main-coffret .info-desktop .spacing > * {
   margin-bottom: 10px;
 }
 .main-coffret .info-desktop .btn-second {
-  color: white;
-  background-color: #1EA7AC;
   font-size: 16px;
 }
 .main-coffret .info-desktop .center-options {
