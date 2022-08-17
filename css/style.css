@@ -842,6 +842,12 @@ hr.hr-2 {
 }
 .main-coffret .info-desktop .btn-second {
   font-size: 16px;
+  -webkit-animation: fadeIn 0.4s;
+          animation: fadeIn 0.4s;
+  transition: 0.3s;
+}
+.main-coffret .info-desktop .btn-second:hover {
+  background-color: #d7d7d9;
 }
 .main-coffret .info-desktop .center-options {
   display: flex;
@@ -866,6 +872,7 @@ hr.hr-2 {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #EFD857;
+  transition: 0.2s;
 }
 @media screen and (max-width: 725px) {
   .main-coffret .menu-tags .active-btn {
